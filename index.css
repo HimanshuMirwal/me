@@ -1,0 +1,275 @@
+.container{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1{
+    color: #49655e;
+}
+.icon{
+    width: 20px;
+}
+.heading{
+    border-bottom: 2px solid #f64e07;
+}
+p{
+    color: #2d3c3b;
+}
+.brand{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #f64e07;
+    border-top: 2px solid #dc3545;
+    color: #fef6c7;
+}
+.brand-div{
+    text-align: center;
+    text-align: center;
+    margin: 40% 5% 2% 5%;
+}
+.left-side-bar{
+    width: 25%;
+    background-color: #000f16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: #fef6c7;
+}
+.right-side-bar{
+    width: 75%;
+    background-color: #fef6c7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: scroll;
+}
+.right-info-div{
+    background-image: linear-gradient( #fef6c7 2%, white 98%);
+}
+.left-side-bar-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    text-align: justify;
+    display: inline-block;
+    /* overflow: scroll; */
+    width: 100%;
+    color: #fef6c7;
+    
+}
+
+.left-side-bar-li{
+    padding: 10px ;
+}
+.left-side-bar-li a{
+    text-decoration: none;
+    color: #fef6c7;
+    font-weight: bold;
+}
+.left-side-bar-span{
+font-weight: bold;
+padding: 0 0 0 5px;
+font-size: 15px;
+}
+.sound{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+.sound-control{
+    text-decoration: none;
+    color: #dc3545;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.right-home{
+    background-image: url(Media/rocket_smoke_space_153323_2560x1024.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.hello-div{
+    text-align: left;
+    margin: 8% auto 0 5%;
+    width: 90%;
+}
+.right-home .hello-div h1 {
+    color: #628c7f;
+ }
+.right-home .hello-div h1 span{
+   font-size: 60px;
+   text-align: left;
+   color: #49655e;
+}
+.right-home .hello-div h5 {
+    color: #fef6c7;
+ }
+.button-custom{
+    border-radius: 100px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.right-about{
+    background:"white";
+    height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: auto;
+}
+.right-skills{
+    background:"white";
+    height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: auto;
+}
+.skills-detail{
+    height: auto;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.skills-detail  h3{
+    color: #628c7f;
+    float: left;
+}
+.skill-star{
+    float: right;
+}
+.skill-star a{
+    color: #dc3545;
+    padding: 2px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.right-education{
+    background:"white";
+    height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: auto;
+}
+
+.education-detail{
+    height: auto;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: 10px auto;
+}
+
+.education-detail h3{
+    color: #628c7f;
+}
+
+.right-projects{
+    background:"white";
+    height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: auto;
+}
+.project-description{
+
+}
+.project-detail{
+    background:"white";
+    height: auto;
+    padding: 2% 5%;
+    text-align: justify;
+}
+.project-detail h3 a{
+    text-decoration: none;
+    color: #628c7f;
+}
+
+.right-contact{
+    background:"white";
+    height: auto;
+    width: 90%;
+    padding: 2% 5%;
+    text-align: justify;
+    margin: auto;
+}
+.contact-description{
+    padding: 50px 0;
+}
+.contact-detail{
+    background:"white";
+    height: auto;
+    padding: 2% 5%;
+    text-align: justify;
+}
+.contact-detail ul{
+    padding: 0;
+    list-style-type: none;
+}
+.contact-detail ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 2px auto;
+}
+.contact-detail ul li a{
+   text-decoration: none;
+   color: #2d3c3b;
+   font-size: 30px;
+   
+}
+
+
+@media only screen and (max-width: 700px) {
+    .left-side-bar{
+        width: 10%;
+    }
+    .icon{
+        width: 100%;
+        text-align: center;
+    }
+    .right-side-bar{
+        width: 90%;
+    }
+    .left-side-bar-ul{
+        padding: 0;
+        margin-top: 100%;
+    }
+    .brand{
+        display: none;
+    }
+    .left-side-bar-span{
+        display: none ;
+    }
+    .left-side-bar-li a{
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .skill-star a{
+        font-size: 15px;
+    }
+    .left-side-bar-li{
+        padding: 10px 0;
+    }
+    .left-side-bar-li a{
+        font-size: 20px;
+    }
+}
+::-webkit-scrollbar{
+    width: 0;
+}
