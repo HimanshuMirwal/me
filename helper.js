@@ -1,5 +1,7 @@
 
-var isPlaying = true;
+var isPlaying = false;
+var data = document.getElementById("song");
+console.log(data);
 function togglePlay() {
     let myAudio = document.getElementById("song");
     let ButtonIcon = document.getElementById("button-song");
