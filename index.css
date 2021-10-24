@@ -5,6 +5,8 @@
 }
 h1{
     color: #49655e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .icon{
     width: 20px;
@@ -14,6 +16,7 @@ h1{
 }
 p{
     color: #2d3c3b;
+    font-family: 'Montserrat', sans-serif;
 }
 .brand{
     font-size: 30px;
@@ -68,6 +71,7 @@ p{
     text-decoration: none;
     color: #fef6c7;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 .left-side-bar-span{
 font-weight: bold;
@@ -104,14 +108,20 @@ font-size: 15px;
 }
 .right-home .hello-div h1 {
     color: #628c7f;
- }
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
 .right-home .hello-div h1 span{
    font-size: 60px;
    text-align: left;
    color: #49655e;
+   font-family: 'Montserrat', sans-serif;
+
 }
 .right-home .hello-div h5 {
     color: #fef6c7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
  }
 .button-custom{
     border-radius: 100px;
@@ -145,6 +155,8 @@ font-size: 15px;
 .skills-detail  h3{
     color: #628c7f;
     float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 .skill-star{
     float: right;
@@ -154,10 +166,10 @@ font-size: 15px;
     padding: 2px;
     text-align: right;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .right-education{
-    background:"white";
     height: auto;
     width: 90%;
     padding: 2% 5%;
@@ -174,10 +186,11 @@ font-size: 15px;
 
 .education-detail h3{
     color: #628c7f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 .right-projects{
-    background:"white";
     height: auto;
     width: 90%;
     padding: 2% 5%;
@@ -188,7 +201,6 @@ font-size: 15px;
 
 }
 .project-detail{
-    background:"white";
     height: auto;
     padding: 2% 5%;
     text-align: justify;
@@ -196,10 +208,10 @@ font-size: 15px;
 .project-detail h3 a{
     text-decoration: none;
     color: #628c7f;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .right-contact{
-    background:"white";
     height: auto;
     width: 90%;
     padding: 2% 5%;
@@ -210,7 +222,6 @@ font-size: 15px;
     padding: 50px 0;
 }
 .contact-detail{
-    background:"white";
     height: auto;
     padding: 2% 5%;
     text-align: justify;
@@ -229,7 +240,7 @@ font-size: 15px;
    text-decoration: none;
    color: #2d3c3b;
    font-size: 30px;
-   
+   font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -256,6 +267,7 @@ font-size: 15px;
     }
     .left-side-bar-li a{
         font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -269,6 +281,7 @@ font-size: 15px;
     }
     .left-side-bar-li a{
         font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 ::-webkit-scrollbar{
