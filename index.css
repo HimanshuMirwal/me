@@ -42,12 +42,11 @@ p{
 }
 .right-side-bar{
     width: 75%;
-    background-color: #fef6c7;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .right-info-div{
     background-image: linear-gradient( #fef6c7 2%, white 98%);
@@ -196,9 +195,7 @@ font-size: 15px;
     text-align: justify;
     margin: auto;
 }
-.project-description{
 
-}
 .project-detail{
     height: auto;
     padding: 2% 5%;
