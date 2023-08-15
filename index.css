@@ -130,23 +130,23 @@ font-size: 15px;
 .right-about{
     background:"white";
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: auto;
 }
 .right-skills{
     background:"white";
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: auto;
 }
 .skills-detail{
     height: auto;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: 10px auto;
     overflow: hidden;
 }
@@ -169,16 +169,16 @@ font-size: 15px;
 
 .right-education{
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: auto;
 }
 
 .education-detail{
     height: auto;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: 10px auto;
 }
 
@@ -190,16 +190,16 @@ font-size: 15px;
 
 .right-projects{
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: auto;
 }
 
 .project-detail{
     height: auto;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
 }
 .project-detail h3 a{
     text-decoration: none !important;
@@ -209,9 +209,9 @@ font-size: 15px;
 
 .right-contact{
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
     margin: auto;
 }
 .contact-description{
@@ -220,7 +220,7 @@ font-size: 15px;
 .contact-detail{
     height: auto;
     padding: 2% 5%;
-    text-align: justify;
+    text-align: start;
 }
 .contact-detail ul{
     padding: 0;
@@ -242,6 +242,8 @@ font-size: 15px;
 @media only screen and (max-width: 700px) {
     .left-side-bar{
         width: 10%;
+        display:flex;
+        align-items: center;
     }
     .icon{
         width: 100%;
