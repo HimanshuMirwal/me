@@ -1,285 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-    <link rel="manifest" href="./assets/site.webmanifest">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script type = "text/javascript" src="./helper.js"></script>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <title>Himanshu Mirwal - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the 'ultra-fancy futuristic' aesthetic */
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: radial-gradient(circle at center, #1a0033 0%, #000000 70%); /* Radial gradient for depth */
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+            position: relative;
+        }
 
-    <!-- monserrat regular -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <title>Himanshu</title>
-    <meta name="description" content="I am enthusiastic & motivated full stack developer working at imarticus learning"/>
-    <meta name='og:title' content='Himanshu'>
-    <meta name='og:type' content='Portfolio'>
-    <meta name='og:url' content='https://himanshumirwal.github.io/me/'>
-    <meta name='og:image' content='./assets/favicon-32x32.png'>
-    <meta name='og:site_name' content='Himanshu'>
-    <meta name='og:description' content="I am enthusiastic & motivated full stack developer working at imarticus learning">
-    <meta name='owner' content='Himanshu'>
-    <meta name='target' content='all'>
-    <meta property="product:brand" content="Himanshu">
-    <meta name="keywords" content="imarticus, imarticus learning, himanshu, himanshu mirwal, full stack developer, react js, node js, mongodb, html, css, software engineering, developer, india">
+        /* Background grid/dots effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#00FFFF 1px, transparent 1px), radial-gradient(#00FFFF 1px, transparent 1px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            opacity: 0.05; /* Very subtle grid */
+            z-index: -1;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00FFFF; /* Electric Cyan */
+            letter-spacing: 0.07em; /* Slightly reduced spacing for smaller fonts */
+            text-shadow: 0 0 7px rgba(0, 255, 255, 1), 0 0 12px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.3); /* Adjusted glow */
+            animation: neon-pulse 2s ease-in-out infinite alternate; /* More distinct breathing glow */
+        }
+
+        @keyframes neon-pulse {
+            from {
+                text-shadow: 0 0 7px rgba(0, 255, 255, 1), 0 0 12px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.3);
+            }
+            to {
+                text-shadow: 0 0 10px rgba(0, 255, 255, 1.2), 0 0 18px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+        }
+
+        .container {
+            max-width: 1200px; /* Adjusted container width */
+            flex-grow: 1;
+        }
+        .section-card {
+            background-color: rgba(26, 26, 46, 0.85);
+            border: 3px solid #00FFFF;
+            border-radius: 2.5rem;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.3); /* Adjusted glow */
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .section-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
+            animation: radial-pulse 4s infinite ease-out;
+            z-index: -1;
+        }
+        @keyframes radial-pulse {
+            0% { transform: scale(0); opacity: 0.1; }
+            50% { transform: scale(1); opacity: 0.05; }
+            100% { transform: scale(0); opacity: 0.1; }
+        }
+
+        .section-card:hover {
+            transform: translateY(-8px) scale(1.01); /* Adjusted lift and scale */
+            box-shadow: 0 0 30px rgba(0, 255, 255, 1), inset 0 0 15px rgba(0, 255, 255, 0.6); /* Adjusted glow on hover */
+            border-color: #00FF00;
+        }
+
+        .header-bg {
+            background: linear-gradient(90deg, #1a0033, #3a005c, #1a0033);
+            color: #ffffff;
+            border-bottom: 4px solid #00FFFF;
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4); /* Adjusted shadow */
+            position: relative;
+            overflow: hidden;
+        }
+        .header-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            animation: scan-line 5s infinite linear;
+        }
+        @keyframes scan-line {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .accent-text {
+            color: #00FFFF;
+        }
+        .list-item::before {
+            content: '» ';
+            color: #00FF00;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        a {
+            color: #00FFFF;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #00FF00;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 1.2), 0 0 15px rgba(0, 255, 0, 0.8); /* Adjusted glow */
+            text-decoration: underline;
+        }
+        strong {
+            color: #00FFFF;
+        }
+        .border-b-2 {
+            border-image: linear-gradient(to right, #00FFFF, rgba(0,255,255,0.5), transparent) 1;
+            border-image-slice: 1;
+        }
+        .footer-bg {
+            background: linear-gradient(90deg, #1a0033, #3a005c, #1a0033);
+            color: #ffffff;
+            border-top: 4px solid #00FFFF;
+            box-shadow: 0 -8px 15px rgba(0, 255, 255, 0.3); /* Adjusted shadow */
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+            animation: scan-line 7s infinite reverse linear;
+        }
+    </style>
 </head>
-
-<body>
-    
-    <div class="container">
-        <div class="left-side-bar">
-            <div class="brand-div">
-                <p class="brand">Himanshu</p>
-            </div>
-            <ul class="left-side-bar-ul">
-                <li class="left-side-bar-li"><a href="#home"><span class="fa fa-home icon" ></span><span class="left-side-bar-span">Home</span></a></li>
-                <li class="left-side-bar-li"><a href="#about"><span class="fa fa-user-circle icon"></span><span class="left-side-bar-span">About</span></a></li>
-                <li class="left-side-bar-li"><a href="#skills"><span class="fa fa-pencil-square icon"></span><span class="left-side-bar-span">Skills</span></a></li>
-                <li class="left-side-bar-li"><a href="#education"><span class="fa fa-graduation-cap icon"></i></span><span class="left-side-bar-span">Education</span></a></li>
-                <li class="left-side-bar-li"><a href="#projects"><span class="fa fa-check-circle icon"></span><span class="left-side-bar-span">Projects</span></a></li>
-                <li class="left-side-bar-li"><a href="#contact"><span class="fa fa-address-card icon"></span><span class="left-side-bar-span">Contact</span></a></li>
-            </ul>
-            
-        </div>
-        <div class="right-side-bar">
-            <div class="right-home" id="home">
-                <div class="hello-div">
-                <h1>
-                    <span>Hii, </span><br>
-                   I am Himanshu<br>
-                </h1>
-                <h5>Full Stack Developer</h5> 
-                <a href="./Media/HIMANSHU.pdf" target="_blank"><button class="btn  btn-danger button-custom">Download CV</button></a>
-                </div>
-
-            </div>
-            <div class="right-info-div">
-            <div class="right-about" id="about">
-                <div class="heading">
-                    <h1>About</h1>
-                </div>
-
-                <div class="about-description">
-                    <p>
-                        Hii, My name is Himanshu Mirwal. I live in Yamuna Nagar(135001), Haryana.
-                        I am a computer Science and Engineering student.
-                        I like to learn programming and technologies and my hobby is listening songs, watching movies and Cooking.
-                    </p>
-                </div>
-            </div>
-            <div class="right-skills" id="skills">
-                <div class="heading">
-                    <h1>Skills</h1>
-                </div>
-                <div class="skills-description">
-                    <div class="skills-detail">
-                        <h3>MERN stack</h3>
-                        <div class="skill-star">
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star-o "></a>
-                        </div>
-                    </div>
-                    <div class="skills-detail">
-                        <h3>Core PHP</h3>
-                        <div class="skill-star">
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star-o "></a>
-                        <a class="fa fa-star-o "></a>
-                        </div>
-                    </div>
-                    <div class="skills-detail">
-                        <h3>C++</h3>
-                        <div class="skill-star">
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star-o "></a>
-                        </div>
-                    </div>
-                    <div class="skills-detail">
-                        <h3>C</h3>
-                        <div class="skill-star">
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star-o "></a>
-                        </div>
-                    </div>
-                    <div class="skills-detail">
-                        <h3>Core Java</h3>
-                        <div class="skill-star">
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star "></a>
-                        <a class="fa fa-star-o "></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right-education" id="education">
-                <div class="heading">
-                    <h1>Education</h1>
-                </div>
-                
-                    <div class="education-description">
-                        <div class="education-detail">
-                            <h3>Higher Secondary</h3>
-                            <p>
-                                I did my <b>higher scecondary education</b> from National High School,
-                                Model Colony(Yamuna Nagar, Haryana) in 2016.
-                            </p>
-                        </div>
-                        <div class="education-detail">
-                            <h3>Diploma</h3>
-                            <p>
-                                Then, I did my Diploma in <b>Computer Engineering</b> from Seth Jai Parkash
-                                Polytechnic,Damla(Yamuna Nagar, Haryana)
-                                in 2016.
-                            </p>
-                        </div>
-                        <div class="education-detail">
-                            <h3>Graduation</h3>
-                            <p>
-                                Now, I am pursuing B.Tech in <b>Computer Science and Engineering</b> from Haryana
-                                Engineering College affiliated to Kurukshetra University,Jagadhari(Yamuna Nagar,
-                                Haryana).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right-projects" id="projects">
-                    <div class="heading">
-                        <h1>Projects</h1>
-                    </div>
-
-                    <div class="project-description">
-                        <div class="project-detail">
-                            <h3><a href="https://himanshumirwal.github.io/Insure" target="_blank">Insure Webpage</a>
-                            </h3>
-                            <p>
-                                Insure is a simple responsive webpage.
-                                HTML, CSS, Bootstrap is used to design this webpage.
-
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <h3><a href="https://himanshumirwal.github.io/tindog" target="_blank">tindog Webpage</a>
-                            </h3>
-                            <p>
-                                Tindog is a simple responsive webpage.
-                                HTML, CSS, Bootstrap is used to design this webpage.
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <h3><a href="https://himanshumirwal.github.io/hangman" target="_blank">Hangman</a></h3>
-                            <p>
-                                Hangman is a simple game.
-                                HTML, CSS, Bootstrap, js is used to design this webpage.
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <h3><a href="https://github.com/HimanshuMirwal/perfect-click"
-                                    target="_blank">Perfect Click</a></h3>
-                            <p>
-                                Perfect Click is an image website. this website is developed by using react js, HTML, CSS,
-                                JS.
-                                this website use image api to display image.
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <h3><a>WebBlog</a></h3>
-                            <a style="color:#3C486B" href="https://github.com/HimanshuMirwal/WebBlogBackend">Backend</a>
-                            <a style="color:#3C486B" href="https://github.com/HimanshuMirwal/WebBlogFrontend">Frontend</a>
-                            <p>
-                                WebBlog is the blog like website. this website is developed by using MERN stack.
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <h3><a>Video Tutorial website</a></h3>
-                            <a style="color:#3C486B" href="https://github.com/HimanshuMirwal/interview--backend">Backend</a>
-                            <a style="color:#3C486B" href="https://github.com/HimanshuMirwal/interview--frontend">Frontend</a>
-                            <p>
-                                Video Tutorial website is the learning website where user can learn different topics. this website is developed by using MERN stack.
-                            </p>
-                        </div>
-                        
-                        <div class="project-detail">
-                            <h3><a>Himashu-chat-room</a></h3>
-                            <p>
-                                this is the simple chat room website. this website is developed by using React, Express,
-                                Node.
-                            </p>
-                        </div>
-                        <div class="project-detail">
-                            <p><b>
-                                    I have completed many projects like this but these projects run offline.
-                                </b></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right-contact" id="contact">
-                    <div class="heading">
-                        <h1>Contact</h1>
-                    </div>
-
-                    <div class="contact-description">
-                        <div class="contact-detail">
-                            <ul>
-                                <li>
-                                    <a class="fa fa-google" href="mailto:himanshumirwal@gmail.com" target="_blank"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/himanshumirwal.mirwal/" class="fa fa-facebook" target="_blank"></a>
-
-                                </li>
-                                <li>
-                                    <a href="https://t.me/Hims0015mir" class="fa fa-telegram" target="_blank"></a>
-
-                                </li>
-                                <li>
-                                    <a href="https://linkedin.com/in/himanshu-mirwal-552986222" class="fa fa-linkedin" target="_blank"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/HimanshuMirwal" class="fa fa-github" target="_blank"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<body class="antialiased">
+    <div class="header-bg py-12 text-center rounded-b-3xl shadow-xl">
+        <h1 class="text-6xl font-bold mb-4 tracking-widest">HIMANSHU MIRWAL</h1>
+        <p class="text-3xl font-light opacity-90">FULL STACK DEVELOPER // SYSTEM ARCHITECT // DIGITAL INNOVATOR</p>
     </div>
-</body>
 
+    <div class="container mx-auto p-10 lg:p-20">
+        <section class="section-card p-10 mb-12 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: CONTACT INTERFACE ::</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xl">
+                <p><strong class="accent-text">_PHONE_ID:</strong> <a href="tel:+918816061632" class="hover:text-green-400">+91 88160 61632</a></p>
+                <p><strong class="accent-text">_EMAIL_ID:</strong> <a href="mailto:himanshumirwal@gmail.com" class="hover:text-green-400">himanshumirwal@gmail.com</a></p>
+                <p><strong class="accent-text">_LINKEDIN_PROFILE:</strong> <a href="https://linkedin.com/in/himanshu-mirwal" target="_blank" class="hover:text-green-400">linkedin.com/in/himanshu-mirwal</a></p>
+                <p><strong class="accent-text">_GITHUB_REPOSITORY:</strong> <a href="https://github.com/HimanshuMirwal" target="_blank" class="hover:text-green-400">github.com/HimanshuMirwal</a></p>
+            </div>
+        </section>
+
+        <section class="section-card p-10 mb-12 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: PROFILE OVERVIEW ::</h2>
+            <p class="text-xl leading-relaxed">
+                <span class="accent-text">_STATUS_REPORT:</span> Enthusiastic and motivated Full Stack Developer with 2+ years of experience creating and implementing web applications
+                with Imarticus Learning. Proficient in front-end and back-end technologies, with a strong focus on delivering efficient
+                and user-friendly solutions. Adept at collaborating with cross-functional teams to achieve project goals and deliver
+                high-quality software.
+            </p>
+        </section>
+
+        <section class="section-card p-10 mb-12 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: SKILL MATRIX ::</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-10 text-xl">
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_FULL STACK PROTOCOLS:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">JavaScript</li>
+                        <li class="list-item">Node.js</li>
+                        <li class="list-item">Express.js</li>
+                        <li class="list-item">React JS</li>
+                        <li class="list-item">Next JS</li>
+                        <li class="list-item">MongoDB</li>
+                        <li class="list-item">AWS (EC2)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_FRONT-END ARCHITECTURES:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">HTML5</li>
+                        <li class="list-item">CSS3</li>
+                        <li class="list-item">SCSS</li>
+                        <li class="list-item">JavaScript ES6+</li>
+                        <li class="list-item">Responsive Design</li>
+                        <li class="list-item">React Native</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_BACK-END SYSTEMS:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">RESTful APIs</li>
+                        <li class="list-item">NoSQL Databases</li>
+                        <li class="list-item">External API Integration</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_VERSION CONTROL INTERFACE:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">Git</li>
+                        <li class="list-item">GitHub</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_DEVELOPMENT TOOLS:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">Visual Studio Code</li>
+                        <li class="list-item">Postman</li>
+                        <li class="list-item">JIRA</li>
+                        <li class="list-item">Agile/Scrum Methodologies</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-2xl mb-3 accent-text">_ANALYTICAL MODULES:</h3>
+                    <ul class="list-none pl-0 space-y-2">
+                        <li class="list-item">Analytical Thinking</li>
+                        <li class="list-item">Troubleshooting Protocols</li>
+                        <li class="list-item">Debugging Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card p-10 mb-12 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: PROFESSIONAL LOG ::</h2>
+            <div class="mb-8">
+                <h3 class="text-3xl font-semibold mb-3">Full Stack Developer <span class="text-lg text-gray-400">// Imarticus Learning</span></h3>
+                <p class="text-xl text-gray-500 mb-5">Location: Noida (201301), UP | Cycle: August 2022 - Present</p>
+                <ul class="list-none pl-0 space-y-4 text-xl">
+                    <li class="list-item">Developed and maintained responsive web applications using React in collaboration with UI/UX designers to
+                        implement pixel-perfect front-end designs, while resolving cross-browser compatibility issues to ensure a seamless
+                        user experience across all major browsers and devices.</li>
+                    <li class="list-item">Designed and implemented RESTful APIs using Node.js and Express, and utilized MongoDB to design database
+                        schemas, optimize queries, and enhance the efficiency and scalability of back-end services.</li>
+                    <li class="list-item">Participated in code reviews and collaborated within an Agile/Scrum environment to improve team coding stan-
+                        dards, deliver high-quality features, and meet sprint timelines.</li>
+                    <li class="list-item"><strong class="accent-text">Initiated and executed the redesign of company web platform (IL3.0) utilizing Next.js and TypeScript</strong>, resulting in
+                        enhanced performance, SEO optimization, and elevated user engagement metrics.</li>
+                    <li class="list-item">Engineered lead integration functionality for Zoho CRM, automating real-time data syncing via API, in direct
+                        collaboration with sales and marketing divisions. Project successfully deployed and tested prior to business vertical discontinuation.</li>
+                    <li class="list-item">Developed a dedicated ticket management panel leveraging the Freshdesk API, facilitating streamlined ticket creation, updates,
+                        and tracking, thereby optimizing support team operational efficiency.</li>
+                    <li class="list-item">Engaging in <strong class="accent-text">React Native</strong> module development, constructing mobile applications including an <strong class="accent-text">Expense Tracker</strong> and <strong class="accent-text">Recipe App</strong> for
+                        cross-platform development proficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-card p-10 mb-12 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: ACADEMIC RECORD ::</h2>
+            <div class="mb-6">
+                <h3 class="text-3xl font-semibold mb-3">Bachelor of Technology in Computer Science and Engineering</h3>
+                <p class="text-xl text-gray-500">Institution: Haryana Engineering College, Jagadhri, Haryana | Completion: July 2022</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-semibold mb-3">Diploma in Computer Engineering</h3>
+                <p class="text-xl text-gray-500">Institution: Seth Jai Parkash Polytechnic, Yamuna Nagar, Haryana | Completion: May 2019</p>
+            </div>
+        </section>
+
+        <section class="section-card p-10 rounded-2xl">
+            <h2 class="text-4xl font-semibold mb-10 pb-6 border-b-2 border-cyan-500 accent-text">:: LANGUAGE PROTOCOLS ::</h2>
+            <ul class="list-none pl-0 space-y-3 text-xl">
+                <li class="list-item">English: Conversational Proficiency</li>
+                <li class="list-item">Hindi: Fluent Communication</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer-bg py-10 text-center mt-12 rounded-t-3xl shadow-xl">
+        <p class="text-xl opacity-80">&copy; 2025 HIMANSHU MIRWAL // DIGITAL ARCHITECT // INTERFACE ONLINE.</p>
+    </footer>
+</body>
 </html>
